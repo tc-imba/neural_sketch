@@ -36,8 +36,8 @@ from program_synthesis.algolisp.dataset import executor
 
 basegrammar = Grammar.fromProductions(algolispProductions()) # Fix this
 
-# with open('basegrammar.p', 'rb') as file:
-# 	basegrammar = pickle.load(file)
+with open('basegrammar.p', 'rb') as file:
+	basegrammar = pickle.load(file)
 
 #reweighted basegrammar:
 # class FrontierEntry(object):

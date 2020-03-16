@@ -36,8 +36,8 @@ from program_synthesis.algolisp.dataset import executor
 
 basegrammar = Grammar.fromProductions(algolispProductions()) # Fix this
 
-with open('basegrammar.p', 'rb') as file:
-	basegrammar = pickle.load(file)
+# with open('basegrammar.p', 'rb') as file:
+# 	basegrammar = pickle.load(file)
 
 #reweighted basegrammar:
 # class FrontierEntry(object):
@@ -337,7 +337,7 @@ if __name__=='__main__':
 	print("max_len:", max_len)
 	print(c)
 
-	assert False
+	# assert False
 	print(basegrammar)
 	g = reweightbasegrammar(basegrammar, 0.1, filter_depth=None, size=None)
 	print(g)

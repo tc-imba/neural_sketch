@@ -337,7 +337,7 @@ if __name__=='__main__':
 	print("max_len:", max_len)
 	print(c)
 
-	assert False
+	# assert False
 	print(basegrammar)
 	g = reweightbasegrammar(basegrammar, 0.1, filter_depth=None, size=None)
 	print(g)
